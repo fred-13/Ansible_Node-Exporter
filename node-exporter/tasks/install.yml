@@ -1,4 +1,5 @@
 ---
+
 - name: Create the node_exporter group
   group:
     name: "{{ _node_exporter_system_group }}"
