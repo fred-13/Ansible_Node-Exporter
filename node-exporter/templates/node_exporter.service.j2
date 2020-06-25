@@ -11,8 +11,7 @@ User={{ _node_exporter_system_user }}
 Group={{ _node_exporter_system_group }}
 ExecStart={{ _node_exporter_binary_install_dir }}/node_exporter \
     --collector.systemd \
-    --collector.textfile \
-    --collector.textfile.directory={{ node_exporter_textfile_dir }} \
+    --collector.processes \
     --web.listen-address={{ node_exporter_web_listen_address }}
 
 SyslogIdentifier=node_exporter
